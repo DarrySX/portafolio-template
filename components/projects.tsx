@@ -99,8 +99,8 @@ export default function Projects() {
             key={category}
             onClick={() => setActiveCategory(category)}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${activeCategory === category
-                ? "bg-primary text-primary-foreground shadow-lg shadow-primary/50"
-                : "bg-card border border-border text-muted-foreground hover:border-primary/50 hover:text-foreground"
+              ? "bg-primary text-primary-foreground shadow-lg shadow-primary/50"
+              : "bg-card border border-border text-muted-foreground hover:border-primary/50 hover:text-foreground"
               }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -137,7 +137,7 @@ export default function Projects() {
 
                 {/* Project Content */}
                 <div className="flex-1 flex flex-col">
-                  <h3 className="text-lg font-bold mb-2">{project.title}</h3>
+                  <h3 className="text-lg font-bold mb-2 gradient-text">{project.title}</h3>
                   <p className="text-muted-foreground text-sm mb-4 flex-1">{project.description}</p>
 
                   {/* Tags */}

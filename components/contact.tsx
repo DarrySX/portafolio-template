@@ -77,7 +77,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">Get In Touch</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent rounded-full" />
         </motion.div>
 
@@ -93,7 +93,7 @@ export default function Contact() {
             <div className="glass p-6 rounded-lg">
               <div className="flex items-center gap-4 mb-2">
                 <Mail className="text-primary" size={24} />
-                <h3 className="font-semibold">Email</h3>
+                <h3 className="font-semibold text-primary">Email</h3>
               </div>
               <p className="text-muted-foreground">hello@example.com</p>
             </div>
@@ -101,7 +101,7 @@ export default function Contact() {
             <div className="glass p-6 rounded-lg">
               <div className="flex items-center gap-4 mb-2">
                 <Phone className="text-primary" size={24} />
-                <h3 className="font-semibold">Phone</h3>
+                <h3 className="font-semibold text-primary">Phone</h3>
               </div>
               <p className="text-muted-foreground">+1 (555) 123-4567</p>
             </div>
@@ -109,7 +109,7 @@ export default function Contact() {
             <div className="glass p-6 rounded-lg">
               <div className="flex items-center gap-4 mb-2">
                 <MapPin className="text-primary" size={24} />
-                <h3 className="font-semibold">Location</h3>
+                <h3 className="font-semibold text-primary">Location</h3>
               </div>
               <p className="text-muted-foreground">San Francisco, CA</p>
             </div>
@@ -125,7 +125,7 @@ export default function Contact() {
             className="lg:col-span-2 glass p-8 rounded-lg space-y-6"
           >
             <div>
-              <label htmlFor="name" className="block text-sm font-semibold mb-2">
+              <label htmlFor="name" className="block text-sm font-semibold mb-2 text-primary">
                 Name
               </label>
               <input
@@ -142,7 +142,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold mb-2">
+              <label htmlFor="email" className="block text-sm font-semibold mb-2 text-primary">
                 Email
               </label>
               <input
@@ -159,7 +159,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold mb-2">
+              <label htmlFor="message" className="block text-sm font-semibold mb-2 text-primary">
                 Message
               </label>
               <textarea

@@ -48,7 +48,7 @@ export default function Skills() {
           <motion.div key={category.title} variants={fadeInUp}>
             <CardHover className="h-full flex flex-col">
               <div className="text-3xl mb-3">{category.icon}</div>
-              <h3 className="text-xl font-bold mb-4 text-primary">{category.title}</h3>
+              <h3 className="text-xl font-bold mb-4 gradient-text">{category.title}</h3>
               <ul className="space-y-3 flex-1">
                 {category.skills.map((skill) => (
                   <li key={skill} className="flex items-center gap-2">
@@ -68,7 +68,7 @@ export default function Skills() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <h3 className="text-2xl font-bold mb-8">Proficiency Levels</h3>
+        <h3 className="text-2xl font-bold mb-8 gradient-text">Proficiency Levels</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { skill: "React & TypeScript", level: 95 },

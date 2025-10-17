@@ -75,8 +75,8 @@ export default function Experience() {
                 <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card/80 hover:border-primary/50 transition-all duration-300">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                     <div>
-                      <h3 className="text-xl font-bold">{exp.title}</h3>
-                      <p className="text-accent font-semibold text-sm">{exp.company}</p>
+                      <h3 className="text-xl font-bold gradient-text">{exp.title}</h3>
+                      <p className="text-primary font-semibold text-sm">{exp.company}</p>
                     </div>
                     <span className="text-sm text-primary font-semibold mt-2 md:mt-0">{exp.year}</span>
                   </div>
