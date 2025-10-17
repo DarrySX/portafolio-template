@@ -56,7 +56,6 @@ export default function Hero() {
 
       <motion.div
         className="container-custom text-center"
-        variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
