@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-bold gradient-text mb-4">Dev</h3>
-            <p className="text-muted text-sm">
+            <p className="text-muted-foreground text-sm">
               Senior Frontend Developer crafting beautiful and performant web experiences.
             </p>
           </div>
@@ -26,17 +26,17 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#about" className="text-muted hover:text-foreground transition-colors">
+                <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#projects" className="text-muted hover:text-foreground transition-colors">
+                <Link href="#projects" className="text-muted-foreground hover:text-primary transition-colors">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted hover:text-foreground transition-colors">
+                <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </Link>
               </li>
@@ -52,7 +52,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label={social.label}
                 >
                   <social.icon size={20} />
@@ -62,13 +62,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-muted">
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
           <p>&copy; {currentYear} All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="hover:text-foreground transition-colors">
+            <Link href="/privacy" className="hover:text-primary transition-colors">
               Privacy
             </Link>
-            <Link href="/terms" className="hover:text-foreground transition-colors">
+            <Link href="/terms" className="hover:text-primary transition-colors">
               Terms
             </Link>
           </div>

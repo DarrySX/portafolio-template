@@ -95,7 +95,7 @@ export default function Contact() {
                 <Mail className="text-primary" size={24} />
                 <h3 className="font-semibold">Email</h3>
               </div>
-              <p className="text-muted">hello@example.com</p>
+              <p className="text-muted-foreground">hello@example.com</p>
             </div>
 
             <div className="glass p-6 rounded-lg">
@@ -103,7 +103,7 @@ export default function Contact() {
                 <Phone className="text-primary" size={24} />
                 <h3 className="font-semibold">Phone</h3>
               </div>
-              <p className="text-muted">+1 (555) 123-4567</p>
+              <p className="text-muted-foreground">+1 (555) 123-4567</p>
             </div>
 
             <div className="glass p-6 rounded-lg">
@@ -111,7 +111,7 @@ export default function Contact() {
                 <MapPin className="text-primary" size={24} />
                 <h3 className="font-semibold">Location</h3>
               </div>
-              <p className="text-muted">San Francisco, CA</p>
+              <p className="text-muted-foreground">San Francisco, CA</p>
             </div>
           </motion.div>
 

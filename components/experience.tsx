@@ -80,7 +80,7 @@ export default function Experience() {
                     </div>
                     <span className="text-sm text-primary font-semibold mt-2 md:mt-0">{exp.year}</span>
                   </div>
-                  <p className="text-muted mb-4">{exp.description}</p>
+                  <p className="text-muted-foreground mb-4">{exp.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {exp.achievements.map((achievement) => (
                       <span

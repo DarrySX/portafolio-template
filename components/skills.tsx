@@ -53,7 +53,7 @@ export default function Skills() {
                 {category.skills.map((skill) => (
                   <li key={skill} className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full" />
-                    <span className="text-muted text-sm">{skill}</span>
+                    <span className="text-muted-foreground text-sm">{skill}</span>
                   </li>
                 ))}
               </ul>

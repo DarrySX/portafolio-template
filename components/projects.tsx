@@ -98,11 +98,10 @@ export default function Projects() {
           <motion.button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
-              activeCategory === category
+            className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${activeCategory === category
                 ? "bg-primary text-primary-foreground shadow-lg shadow-primary/50"
-                : "bg-card border border-border text-muted hover:border-primary/50 hover:text-foreground"
-            }`}
+                : "bg-card border border-border text-muted-foreground hover:border-primary/50 hover:text-foreground"
+              }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -139,7 +138,7 @@ export default function Projects() {
                 {/* Project Content */}
                 <div className="flex-1 flex flex-col">
                   <h3 className="text-lg font-bold mb-2">{project.title}</h3>
-                  <p className="text-muted text-sm mb-4 flex-1">{project.description}</p>
+                  <p className="text-muted-foreground text-sm mb-4 flex-1">{project.description}</p>
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -184,7 +183,7 @@ export default function Projects() {
       {/* Empty State */}
       {filteredProjects.length === 0 && (
         <motion.div className="text-center py-12" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          <p className="text-muted text-lg">No projects found in this category.</p>
+          <p className="text-muted-foreground text-lg">No projects found in this category.</p>
         </motion.div>
       )}
     </SectionWrapper>

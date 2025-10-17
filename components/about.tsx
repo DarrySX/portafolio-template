@@ -40,26 +40,26 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="space-y-6"
         >
-          <p className="text-lg text-muted leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             I&apos;m a passionate developer with 8+ years of experience building scalable web applications. My journey
             started with a curiosity about how things work on the web, and it has evolved into a deep expertise in
             modern frontend technologies.
           </p>
 
-          <p className="text-lg text-muted leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             I specialize in creating performant, accessible, and beautiful user interfaces using React, TypeScript, and
-            modern CSS. I&apos;m committed to writing clean, maintainable code and staying updated with the latest industry
+            modern CSS. I&apos;m committed to write clean, maintainable code and staying updated with the latest industry
             trends.
           </p>
 
           <div className="grid grid-cols-2 gap-4 pt-4">
             <CardHover>
               <p className="text-3xl font-bold gradient-text mb-1">8+</p>
-              <p className="text-sm text-muted">Years Experience</p>
+              <p className="text-sm text-muted-foreground">Years Experience</p>
             </CardHover>
             <CardHover>
               <p className="text-3xl font-bold gradient-text mb-1">50+</p>
-              <p className="text-sm text-muted">Projects Completed</p>
+              <p className="text-sm text-muted-foreground">Projects Completed</p>
             </CardHover>
           </div>
 
