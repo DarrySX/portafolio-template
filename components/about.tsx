@@ -1,9 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { SectionWrapper, SectionHeader } from "@/components/ui/section-wrapper"
 import { CardHover } from "@/components/ui/card-hover"
-import { fadeInLeft, fadeInRight } from "@/lib/animations"
 
 export default function About() {
   return (
@@ -15,29 +15,40 @@ export default function About() {
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <motion.div variants={fadeInLeft} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="relative w-full aspect-square rounded-xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 z-10" />
-            <img src="/professional-developer-portrait.jpg" alt="Professional portrait" className="w-full h-full object-cover" />
+            <Image
+              src="/professional-developer-portrait.jpg"
+              alt="Professional portrait"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </motion.div>
 
         <motion.div
-          variants={fadeInRight}
-          initial="hidden"
-          whileInView="visible"
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
           className="space-y-6"
         >
           <p className="text-lg text-muted leading-relaxed">
-            I'm a passionate developer with 8+ years of experience building scalable web applications. My journey
+            I&apos;m a passionate developer with 8+ years of experience building scalable web applications. My journey
             started with a curiosity about how things work on the web, and it has evolved into a deep expertise in
             modern frontend technologies.
           </p>
 
           <p className="text-lg text-muted leading-relaxed">
             I specialize in creating performant, accessible, and beautiful user interfaces using React, TypeScript, and
-            modern CSS. I'm committed to writing clean, maintainable code and staying updated with the latest industry
+            modern CSS. I&apos;m committed to writing clean, maintainable code and staying updated with the latest industry
             trends.
           </p>
 

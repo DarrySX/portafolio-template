@@ -6,8 +6,14 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 
-const geistSans = Geist({ subsets: ["latin"] })
-const geistMono = Geist_Mono({ subsets: ["latin"] })
+const geistSans = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans"
+})
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono"
+})
 
 export const metadata: Metadata = {
   title: "Senior Frontend Developer | Portfolio",
@@ -17,7 +23,7 @@ export const metadata: Metadata = {
     description: "Professional portfolio showcasing expertise in modern web development",
     type: "website",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -27,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} bg-background text-foreground`}>
+      <body className={`${geistSans.className} ${geistMono.variable} bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Navigation />
           <main>{children}</main>

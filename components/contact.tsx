@@ -185,7 +185,7 @@ export default function Contact() {
                 >
                   <CheckCircle className="text-green-500" size={20} />
                   <p className="text-green-500 text-sm font-medium">
-                    Message sent successfully! We'll get back to you soon.
+                    Message sent successfully! We&apos;ll get back to you soon.
                   </p>
                 </motion.div>
               )}

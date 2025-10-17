@@ -1,12 +1,49 @@
 {
-  "name": "senior-portfolio",
+  "name": "modern-portfolio-template",
   "version": "1.0.0",
-  "private": true,
+  "description": "A beautiful, responsive, and modern portfolio template built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion",
+  "private": false,
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://yourportfolio.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/modern-portfolio-template.git"
+  },
+  "homepage": "https://github.com/yourusername/modern-portfolio-template#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/modern-portfolio-template/issues"
+  },
+  "keywords": [
+    "portfolio",
+    "template",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "react",
+    "responsive",
+    "modern",
+    "dark-mode",
+    "developer-portfolio",
+    "personal-website"
+  ],
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": ">=8.0.0"
+  },
   "scripts": {
-    "build": "next build",
     "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
-    "start": "next start"
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "preview": "next build && next start",
+    "clean": "rm -rf .next out dist node_modules/.cache"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -19,16 +56,17 @@
     "react": "^19",
     "react-dom": "^19",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7",
-    "tw-animate-css": "latest"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.0",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "^15.5.6",
     "postcss": "^8.5",
-    "tailwindcss": "^4.1.9",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
 }
