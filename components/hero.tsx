@@ -76,12 +76,12 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="gradient-text">Crafting Digital</span>
             <br />
-            <span>Experiences</span>
+            <span className="text-foreground">Experiences</span>
           </h1>
         </motion.div>
 
         {/* Description */}
-        <motion.p variants={fadeInUp} className="text-xl text-muted max-w-2xl mx-auto mb-8 leading-relaxed">
+        <motion.p variants={fadeInUp} className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
           Senior Frontend Developer specializing in building scalable, performant, and beautiful web applications with
           modern technologies. Transforming ideas into elegant solutions.
         </motion.p>
@@ -127,7 +127,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-            className="text-muted"
+            className="text-muted-foreground"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -149,7 +149,7 @@ export default function Hero() {
               transition={{ delay: 0.8 + index * 0.1 }}
             >
               <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">{stat.number}</div>
-              <div className="text-sm text-muted">{stat.label}</div>
+              <div className="text-sm text-muted-foreground">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>

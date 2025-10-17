@@ -71,16 +71,28 @@ A beautiful, responsive, and modern portfolio template built with **Next.js 15**
 
 ### 🎨 Colors and Themes
 
-The template uses CSS variables for easy theming. Edit `app/globals.css` to customize colors:
+The template uses CSS variables for easy theming with **optimized contrast ratios** for both light and dark modes. Edit `app/globals.css` to customize colors:
 
 ```css
 :root {
   --background: 0 0% 100%;
   --foreground: 240 10% 3.9%;
-  --primary: 240 9% 89%;
+  --primary: 220 60% 50%;        /* High contrast blue */
+  --primary-foreground: 0 0% 98%;
+  --muted-foreground: 220 8.9% 40%; /* Improved readability */
+  /* ... more variables */
+}
+
+.dark {
+  --primary: 220 70% 55%;        /* Lighter blue for dark mode */
+  --muted-foreground: 220 5% 70%; /* Better contrast in dark */
   /* ... more variables */
 }
 ```
+
+**🌈 Gradient Text**: Special gradients optimized for each theme:
+- **Light mode**: Blue to purple gradient
+- **Dark mode**: Light blue to pink gradient
 
 ### 📝 Content
 

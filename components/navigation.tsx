@@ -35,7 +35,7 @@ export default function Navigation() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-muted hover:text-foreground transition-colors duration-300"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium"
             >
               {item.label}
             </Link>
@@ -47,7 +47,7 @@ export default function Navigation() {
           {mounted && (
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-lg hover:bg-card transition-colors"
+              className="p-2 rounded-lg hover:bg-accent transition-colors text-foreground hover:text-primary"
             >
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -55,7 +55,7 @@ export default function Navigation() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-card transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-accent transition-colors text-foreground hover:text-primary"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -70,7 +70,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-muted hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
