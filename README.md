@@ -2,7 +2,7 @@
 
 A beautiful, responsive, and modern portfolio template built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Perfect for developers, designers, and creative professionals who want to showcase their work with style.
 
-![Portfolio Template Preview](https://via.placeholder.com/1200x600/1a1a1a/ffffff?text=Portfolio+Template+Preview)
+![Portafolio Template Preview](./public/preview.png)
 
 ## ✨ Features
 
@@ -20,15 +20,15 @@ A beautiful, responsive, and modern portfolio template built with **Next.js 15**
 
 ## 🎯 Demo
 
-🔗 **[Live Demo](https://your-demo-link.vercel.app)**
+🔗 **[Live Demo](https://portafolio-template-gold.vercel.app/)**
 
 ## 📸 Screenshots
 
 ### Desktop
-![Desktop View](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Desktop+View)
+![Desktop View](./public/desktop-view.png)
 
 ### Mobile
-![Mobile View](https://via.placeholder.com/400x600/1a1a1a/ffffff?text=Mobile+View)
+![Mobile View](./public/mobile-view.png)
 
 ## 🚀 Quick Start
 
